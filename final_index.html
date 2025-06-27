@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About </title>
+    
+    <style>
+        /* * === General Styles (Consistent with Menu Page) === */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* * === Header and Navigation Styles === */
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d97706; /* Amber color */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            color: #d97706;
+        }
+        
+        /* Style for the currently active navigation link */
+        nav a.active {
+            font-weight: bold;
+            color: #d97706;
+        }
+
+        /* * === Section Styles === */
+        .content-section {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        /* * === Quiz Styles === */
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+        .quiz-question p {
+            font-weight: bold;
+        }
+        .quiz-options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #quiz-submit-btn {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fbbf24;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        #quiz-submit-btn:hover {
+            background-color: #f59e0b;
+        }
+
+        #quiz-results {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Café da Paz</div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="order.html">Menu</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Photo Gallery Section (Placeholder) -->
+        <section class="content-section">
+            <h2>Photo Gallery</h2>
+            <p>In our gallery we share photos of our delicious food and cozy cafe atmosphere.</p>
+            <img src="C:/Users/Dell/Desktop/Cafe de Paz/Home/customer.jpeg" alt="People enjoying their coffee" height="300px" width="300px">
+            <img src="C:/Users/Dell/Desktop/Cafe de Paz/Home/bakery_1.jpeg" alt="Cake" height="320px" width="240px">
+            <img src="C:/Users/Dell/Desktop/Cafe de Paz/Home/bakery_3.jpeg" alt="black coffee" height="330px" width="220px">
+            <img src="C:/Users/Dell/Desktop/Cafe de Paz/Home/bakery_2.jpeg" alt="capachino" height="240px" width="240px">
+        </section>
+
+        <!-- Contact Us Section (Placeholder) -->
+        <section class="content-section">
+            <h2>Contact Us</h2>
+            <p><br><b>Name : Cafe de Paz
+                <br>Contact : 34567-76543
+                <br>Email : cafedepaz@xyz.com </b>
+                <br> <strong>We look forward to hearing from you! </strong></p>
+        </section>
+
+        <!-- Quick Quiz Section -->
+        <section class="content-section">
+            <h2>Quick Quiz</h2>
+            <p>Test your foodie knowledge for fun!</p>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="quiz-question">
+                    <p>1. What is the main ingredient in an Espresso?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="a"> Milk</label>
+                        <label><input type="radio" name="q1" value="b"> Coffee Beans</label>
+                        <label><input type="radio" name="q1" value="c"> Tea Leaves</label>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="quiz-question">
+                    <p>2. Which country is most famous for Masala Chai?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="a"> Italy</label>
+                        <label><input type="radio" name="q2" value="b"> China</label>
+                        <label><input type="radio" name="q2" value="c"> India</label>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="quiz-question">
+                    <p>3. A Cappuccino is a coffee drink topped with what?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="a"> Foamed Milk</label>
+                        <label><input type="radio" name="q3" value="b"> Whipped Cream</label>
+                        <label><input type="radio" name="q3" value="c"> Ice Cream</label>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="quiz-question">
+                    <p>4. What is the main flavor in a Mango Lassi?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q4" value="a"> Banana</label>
+                        <label><input type="radio" name="q4" value="b"> Mango</label>
+                        <label><input type="radio" name="q4" value="c"> Strawberry</label>
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <div class="quiz-question">
+                    <p>5. Which of these is a popular Indian street food snack?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q5" value="a"> Pizza</label>
+                        <label><input type="radio" name="q5" value="b"> Croissant</label>
+                        <label><input type="radio" name="q5" value="c"> Samosa</label>
+                    </div>
+                </div>
+                <button type="submit" id="quiz-submit-btn">Submit Answers</button>
+            </form>
+            <div id="quiz-results"></div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get the form and the results container from the HTML
+            const quizForm = document.getElementById('quiz-form');
+            const resultsContainer = document.getElementById('quiz-results');
+
+            // Listen for when the user submits the form
+            quizForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Stop the page from reloading
+
+                // These are the correct answers for our quiz
+                const correctAnswers = {
+                    q1: 'b',
+                    q2: 'c',
+                    q3: 'a',
+                    q4: 'b',
+                    q5: 'c'
+                };
+
+                let score = 0; // Start the score at 0
+                const totalQuestions = 5;
+
+                // Loop through each question to check the answer
+                for (let i = 1; i <= totalQuestions; i++) {
+                    const questionName = 'q' + i; // e.g., 'q1', 'q2'
+                    
+                    // Find the radio button the user selected for this question
+                    const selectedOption = quizForm.querySelector(`input[name="${questionName}"]:checked`);
+
+                    // If the user selected an answer and it's the correct one...
+                    if (selectedOption && selectedOption.value === correctAnswers[questionName]) {
+                        score++; // ...increase the score by 1
+                    }
+                }
+
+                // Display the final score on the page
+                resultsContainer.textContent = `You scored ${score} out of ${totalQuestions}!`;
+            });
+        });
+    </script>
+
+</body>
+</html>
